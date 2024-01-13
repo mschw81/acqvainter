@@ -19,7 +19,7 @@ where a.b.c is the R version number and YYYY-MM-DD is a snapshot date for packag
 	- If you want to share a few notebooks in the same repo, it might be better to 
 	  place in a notebooks subfolder 
 6. Customise the readme and description as appropriate.
-7. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=notebooks%2Facqvainter_cb.ipynb
+7. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=acqvainter_cb.ipynb
    There are three sequences you need to adapt:
    + the user name (*mschw81* is my GitHub username) 
    + the repo name (*acqvainter* is the repo name)
