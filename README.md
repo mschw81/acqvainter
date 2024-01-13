@@ -1,25 +1,26 @@
-# r-binder-template
+This GitHub repository is the repo that is used to generate the interactive notebook for the AcqVA Aurora Workshop *Advanced Dimension-Reduction Methods and Using  Online Computing for Transparent Research* (Date/Time: January 16, 2024, onsite and online).
 
-A template repository for binderising one off R notebooks for workshops and training.
+Interactive notebooks are a great way to render your analysis transparent and reproducible as they not only show the code used in an anlysis but also allow other to execute and change code (which can be used to test the stability of statistical models or to inspect the data an analysis is based on).
 
-This repository is intended as a compact template for deploying one off
-notebooks and training materials for customised workshops. 
+This repo is Dockerised and then fired up in Binder where other users can execute and change your code. 
 
 # Usage
 
-1. Click the "Use this template" in the GitHub web UI to create a new repository
+1. Go to the following GitHub repository:
+2.
+3. Click the "Use this template" in the GitHub web UI to create a new repository
 with these skeleton elements for binderisation.
-2. The default R version is 4.2.2. If you want to use a later version, you can choose the R version and put it in runtime.txt in the format: `r-a.b.c-YYYY-MM-DD`
+4. The default R version is 4.2.2. If you want to use a later version, you can choose the R version and put it in runtime.txt in the format: `r-a.b.c-YYYY-MM-DD`
 where a.b.c is the R version number and YYYY-MM-DD is a snapshot date for packages.
-3. Specify R dependencies in install.R, using standard R installation syntax: `install.packages('dplyr')`
-4. Specify systems dependencies in apt.txt, with one line per package and the required package name
-5. Whack your notebook (either ipynb or Rmd) and associated small data files in the repo. 
+5. Specify R dependencies in install.R, using standard R installation syntax: `install.packages('dplyr')`
+6. Specify systems dependencies in apt.txt, with one line per package and the required package name
+7. Whack your notebook (either ipynb or Rmd) and associated small data files in the repo. 
 	- For a single jupyter notebook this might just be at the root of the repo
 	- You might want to put data files in a data subfolder
 	- If you want to share a few notebooks in the same repo, it might be better to 
 	  place in a notebooks subfolder 
-6. Customise the readme and description as appropriate.
-7. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=acqvainter_cb.ipynb
+8. Customise the readme and description as appropriate.
+9. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=acqvainter_cb.ipynb
    There are three sequences you need to adapt:
    + the user name (*mschw81* is my GitHub username) 
    + the repo name (*acqvainter* is the repo name)
