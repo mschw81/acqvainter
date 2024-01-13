@@ -19,11 +19,12 @@ where a.b.c is the R version number and YYYY-MM-DD is a snapshot date for packag
 	- If you want to share a few notebooks in the same repo, it might be better to 
 	  place in a notebooks subfolder 
 6. Customise the readme and description as appropriate.
-7. Adapt the link to Binder so that Binder can fire up ypur notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/main?labpath=notebooks%2Facqvainter_cb.ipynb
-8.
-9. Setup the binder link on the [ATAP Binder Instance](https://binderhub.atap-binder.cloud.edu.au/) 
-or [My Binder](https://mybinder.org/) (Broadly accessible, but lower memory/CPU limits). You will
-point binder to the repository you have created from this template, probably using the `main` branch, 
-and providing the name of the notebook you want to be launched by default (if desired).
-10. Place the generated binder link (ideally with the Binder icon) in the readme.
+7. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=notebooks%2Facqvainter_cb.ipynb
+   There are three sequences you need to adapt:
+   + the user name (*mschw81* is my GitHub username) 
+   + the repo name (*acqvainter* is the repo name)
+   + the notebook name (*acqvainter_cb.ipynb* is the notebook name).
+As an alterntive, you can also upload your Jupyter notebook into Google Colab and share it with others. The issue is that Google Colab will kick you out if computations (including package installations) take too long and you have rather limited computing power. 
+
+Be aware that the first time you start your interactive notebook, the set up will take very long because a Docker image (a virtual machine) with all required software applications and packages will be created from your GitHub repository. This can take up to an hour if your notebook is very complex and has many dependencies. Simpler notebooks fire up much faster but will take at least 10 minutes to start when you first fire them up.
 
