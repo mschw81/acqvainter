@@ -6,21 +6,20 @@ This repo is Dockerised and then fired up in Binder where other users can execut
 
 # Usage
 
-1. Go to the following GitHub repository:
-2.
-3. Click the "Use this template" in the GitHub web UI to create a new repository
+1. Go to the following GitHub repository: https://github.com/Australian-Text-Analytics-Platform/r-binder-template
+2. Click the "Use this template" in the GitHub web UI to create a new repository
 with these skeleton elements for binderisation.
-4. The default R version is 4.2.2. If you want to use a later version, you can choose the R version and put it in runtime.txt in the format: `r-a.b.c-YYYY-MM-DD`
+3. The default R version is 4.2.2. If you want to use a later version, you can choose the R version and put it in runtime.txt in the format: `r-a.b.c-YYYY-MM-DD`
 where a.b.c is the R version number and YYYY-MM-DD is a snapshot date for packages.
-5. Specify R dependencies in install.R, using standard R installation syntax: `install.packages('dplyr')`
-6. Specify systems dependencies in apt.txt, with one line per package and the required package name
-7. Whack your notebook (either ipynb or Rmd) and associated small data files in the repo. 
+4. Specify R dependencies in install.R, using standard R installation syntax: `install.packages('dplyr')`
+5. Specify systems dependencies in apt.txt, with one line per package and the required package name
+6. Whack your notebook (either ipynb or Rmd) and associated small data files in the repo. 
 	- For a single jupyter notebook this might just be at the root of the repo
 	- You might want to put data files in a data subfolder
 	- If you want to share a few notebooks in the same repo, it might be better to 
 	  place in a notebooks subfolder 
-8. Customise the readme and description as appropriate.
-9. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=acqvainter_cb.ipynb
+7. Customise the readme and description as appropriate.
+8. Adapt the link to Binder so that Binder can fire up your notebook. For the present tutorial, the link looks as follows: https://mybinder.org/v2/gh/mschw81/acqvainter/main?labpath=acqvainter_cb.ipynb
    There are three sequences you need to adapt:
    + the user name (*mschw81* is my GitHub username) 
    + the repo name (*acqvainter* is the repo name)
