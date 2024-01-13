@@ -24,7 +24,7 @@ where a.b.c is the R version number and YYYY-MM-DD is a snapshot date for packag
 	  place in a notebooks subfolder 
 6. Customise the readme and description as appropriate.
 7. Setup the binder link on the [ATAP Binder Instance](https://binderhub.atap-binder.cloud.edu.au/) 
-or [My Binder](https://mybinder.org/)(Broadly accessible, but lower memory/CPU limits). You will
+or [My Binder](https://mybinder.org/) (Broadly accessible, but lower memory/CPU limits). You will
 point binder to the repository you have created from this template, probably using the `main` branch, 
 and providing the name of the notebook you want to be launched by default (if desired).
 8. Place the generated binder link (ideally with the Binder icon) in the readme.
